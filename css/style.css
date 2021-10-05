@@ -1,0 +1,45 @@
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #023047;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav a {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #f1faee;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #457b9d;
+}
+
+.nav .current-page {
+    background-color: teal;
+}
+
+.content {
+    margin: 20px 100px 100px;
+}
+
+p, ul {
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    /* text-align: center; */
+}
+
+
+.left {
+    text-align: left;
+}
