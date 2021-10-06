@@ -10,12 +10,17 @@
     align-items: center;
 }
 
+body {
+    background-color: #f3f3f3;
+}
+
 .nav a {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
     color: #f1faee;
     text-decoration: none;
+    padding: 4px 4px 4px;
 }
 
 .nav a:hover {
@@ -23,23 +28,121 @@
 }
 
 .nav .current-page {
-    background-color: teal;
+    text-decoration: underline;
+    text-decoration-color: teal;
+    text-decoration-thickness: 4px;
 }
 
 .content {
-    margin: 20px 100px 100px;
+    margin: 20px 200px 200px;
+}
+
+.image-block {
+    display: grid;
+    grid-template-areas: 
+    "image name"
+    "image intro"
+    "image resume-button";
+    justify-items: center;
+}
+
+.image {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    width: 260px;
+    height: 260px;
+    margin-right: 80px;
+    grid-area: image;
+}
+
+.name {
+    grid-area: name;
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 2px;
+}
+
+.resume-button {
+    grid-area: resume-button;
+    background-color: #023047;
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
+    border-radius: 25px;
+    border: 1px solid whitesmoke;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+
+.center {
+    text-align: center;
 }
 
 p, ul {
     font-family: 'Varela Round', sans-serif;
 }
 
+p::first-letter {
+    text-transform: uppercase;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
-    /* text-align: center; */
+}
+
+.skill-block {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breaker {
+    border-top: 1px dotted grey;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.skill {
+    background-color: #001219;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size:15px;
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+    margin: 5px 5px;
+}
+
+.link-decor {
+    color: black;
 }
 
 
-.left {
-    text-align: left;
+@media (max-width: 800px) {
+    .content {
+        margin: 20px 20px 20px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+        margin-right: 40px;
+    }
+
+    .name {
+        font-size: 26px;
+    }
 }
