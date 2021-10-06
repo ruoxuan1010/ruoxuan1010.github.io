@@ -126,10 +126,25 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+pre {
+    white-space: pre-wrap;
+    display: block;
+}
+
+pre:hover {
+    position: relative;
+    font-size: 16px;
+    width: 800px;
+    z-index: 99;
+}
 
 @media (max-width: 800px) {
     .content {
         margin: 20px 20px 20px;
+    }
+
+    .nav {
+        grid-template-columns: 30% 23% 23% 23%;
     }
 
     .nav a {
@@ -146,3 +161,4 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 26px;
     }
 }
+
